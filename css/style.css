@@ -43,7 +43,7 @@ li{
 .nav__logo{
     width: 20%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .nav__options{
@@ -185,7 +185,7 @@ input[type="text"]::placeholder{
     width: 100%;
     margin-top: 2em;
     background-color: var(--desaturated-blue);
-    padding: 2em;
+    padding: 3em;
     color: var(--light-grayish-blue);
     display: flex;
     flex-direction: column;
@@ -218,7 +218,7 @@ input[type="text"]::placeholder{
     padding-bottom: 2em;
 }
 .footer__logo img{
-    width: 50%;
+    width: auto;
 }
 .icon{
     width: 14px;
@@ -253,4 +253,110 @@ input[type="text"]::placeholder{
     display: flex;
     width: 20px;
     height: 20px;
+}
+@media (min-width: 500px) and (max-width: 720px){
+    body{
+        font-size: 14px;
+    }
+    .productive__info-testimonials{
+        font-size: .8em;
+    }
+}
+@media (min-width: 720px) and (max-width: 1440px){
+    body{
+        font-size: 16px;
+    }
+    .hero{
+        flex-direction: row;
+    }
+    .nav__logo img{
+        width: 70%;
+    }
+    .hero__info{
+        width: 60%;
+        text-align: left;
+        padding: 2em 0;
+    }
+    .hero__figure{
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__figure img{
+        width: 70%;
+    }
+    .productive{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .productive__figure{
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .productive__figure img{
+        width: 80%;
+    }
+    .productive__info-link{
+        width: 100%;
+        justify-content: flex-start;
+        margin: 2em 0;
+    }
+    .productive__info-testimonials{
+        width: 60%;
+        margin: 0;
+
+    }
+    .access{
+        flex-direction: row;
+        align-items: center;
+        gap: 4em;
+        padding: 5em;
+    }
+    .access__info{
+        width: 50%;
+        text-align: left;
+    }
+    .access__register{
+        width: 45%;
+        text-align: left;
+    }
+    .access__register input{
+        margin: .6em;
+        width: 70%;
+    }
+    .access__register .cta{
+        width: 40%;
+    }
+    .footer__down{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__down-options{
+        margin: 0;
+    }
+    .footer__down-social{
+        align-items: flex-start;
+    }
+}
+@media (min-width:1024px) {
+    .hero__info-subscribe{
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+        padding: 0;
+    }
+    .hero__info-subscribe input{
+        margin-bottom: 0;
+        width: 50%;
+    }
+    .hero__info-subscribe .cta{
+        width: 30%;
+    }
+    .nav__logo img{
+        width: 70%;
+    }
+
+    
 }
